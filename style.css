@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:900');
+
+body {
+    font-size : 2vh;
+    font-family: 'Montserrat Alternates', sans-serif;
+align-content: center;
+background-color: gray;
+/* margin:0;
+padding:0; */
+/* height:80%; */
+margin : 3vh 15vh;
+}
+
+.container {
+    border: 1vh solid black;
+    width: 80%;
+    margin: auto auto ;
+    background-color: white;
+    padding: 5px;
+    border-radius: 15px;
+    background:linear-gradient(to bottom, #ededed 5%, #85939c 100%);
+}
+
+.header h1 {
+    text-align: center;
+    margin:10px;
+    width: 100%;
+    color:#38474b;
+	font-family:Arial;
+	font-size:4vh;
+}
+
+.header {
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color:#38474b;
+	font-family:Arial;
+	font-size:3vh;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+
+.player1 {
+    flex-wrap: wrap;
+    border: 1vh solid black;
+    width: 20vw;
+    border-radius: 15px;
+    height : 100%;
+    padding: 10px 0px;
+    background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+    text-align: center;
+}
+
+.player2 {
+    flex-wrap: wrap;
+    border: 1vh solid black;
+    width: 20vw;
+    border-radius: 15px;
+    height : 100%;
+    padding: 10px 0px;
+    background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+    text-align: center;
+}
+
+.activeplayer {
+    background:linear-gradient(to bottom, #ededed 5%, #000000 100%);
+}
+
+.startgame_btn {
+    color: black;
+    background: #7e87dd;
+    border-radius: 5px;
+    transition: all 0.4s ease 0s;
+    height:5vh;
+    margin: auto 5vh; ;
+	box-shadow: 3px 4px 0px 0px #2f3f44;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#38474b;
+	font-family:Arial;
+	/* font-size:17px; */
+	padding:7px 25px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #e1e2ed;
+}
+
+.continuegame_btn:hover, .startgame_btn:hover {
+    background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+    background-color:#bab1ba;
+    color: red;
+}
+
+.continuegame_btn {
+    color: black;
+    background: #7e87dd;
+    border-radius: 5px;
+    transition: all 0.4s ease 0s;
+    height:5vh;
+    margin: auto 5vh; ;
+	box-shadow: 3px 4px 0px 0px #2f3f44;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#38474b;
+	/* font-family:Arial; */
+	/* font-size:17px; */
+	padding:7px 25px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #e1e2ed;
+    display: none;
+}
+
+
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-content: space-between; */
+    /* width:100%; */
+} 
+
+p {
+    text-align: center;
+}
+
+.cards img {
+    padding: 15px;
+    height: 10vh;
+}
+
+.whowinshand {
+    padding : 20px 0px;
+    position: relative;
+    visibility: hidden;
+    color: #38474b;
+}
+
+.btn {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 5px ;
+	box-shadow: 3px 4px 0px 0px #2f3f44;
+	background:linear-gradient(to bottom, #ededed 5%, hsl(300, 2%, 46%) 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#38474b;
+	/* font-family:Arial; */
+	/* font-size:2vh; */
+	padding:7px 25px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #e1e2ed;
+    width : 16vh;
+    font-weight: bold;
+}
+.activeplayer .btn:hover {
+    background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	/* background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%); */
+    /* background-color:#bab1ba; */
+    color: white;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
+
+/* 
+.myButton {
+	box-shadow: 3px 4px 0px 0px #1564ad;
+	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	background-color:#79bbff;
+	border-radius:5px;
+	border:1px solid #337bc4;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:12px 44px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color:#378de5;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+} */
