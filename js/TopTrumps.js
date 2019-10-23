@@ -315,12 +315,12 @@ const selectionFunction = (player1, player2, category, player) => {
 
     if (category == "losses") {
         if (player1 > player2) {
-            lossesPlayer1Button.style.color = "red"
+            lossesPlayer2Button.style.color = "red"
             alertCompareScores(2);
             player2Wins();
         }
         else {
-            lossesPlayer2Button.style.color = "red"
+            lossesPlayer1Button.style.color = "red"
             alertCompareScores(1);
             player1Wins();
         }
