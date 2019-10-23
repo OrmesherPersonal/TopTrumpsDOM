@@ -313,11 +313,23 @@ const selectionFunction = (player1, player2, category, player) => {
         revealPlayer1();
     }
 
-    if (player1 > player2) {
+    if (category == "losses") {
+        if (player1 > player2) {
+            lossesPlayer1Button.style.color = "red"
+            alertCompareScores(2);
+            player1Wins(2);
+        }
+        else {
+            lossesPlayer2Button.style.color = "red"
+            alertCompareScores(1);
+            player1Wins(1);
+        }
+    }
+
+
+    else if (player1 > player2) {
         switch (category) {
             case "wins": winsPlayer1Button.style.color = "red"
-                break;
-            case "losses": lossesPlayer1Button.style.color = "red"
                 break;
             case "kos": kosPlayer1Button.style.color = "red"
                 break;
@@ -328,13 +340,10 @@ const selectionFunction = (player1, player2, category, player) => {
         }
         alertCompareScores(1);
         player1Wins();
-
     }
     else if (player1 < player2) {
         switch (category) {
             case "wins": winsPlayer2Button.style.color = "red"
-                break;
-            case "losses": lossesPlayer2Button.style.color = "red"
                 break;
             case "kos": kosPlayer2Button.style.color = "red"
                 break;
